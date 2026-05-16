@@ -1,0 +1,132 @@
+body{
+margin:0;
+padding:0;
+font-family:Tahoma, sans-serif;
+background:#0b0000;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+overflow:hidden;
+}
+
+body::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:
+linear-gradient(90deg, rgba(255,0,0,0.05) 1px, transparent 1px),
+linear-gradient(rgba(255,0,0,0.05) 1px, transparent 1px);
+background-size:40px 40px;
+opacity:0.4;
+}
+
+body::after{
+content:"";
+position:absolute;
+width:700px;
+height:700px;
+background:radial-gradient(circle,#7f1d1d 0%, transparent 70%);
+top:-200px;
+right:-200px;
+opacity:0.5;
+}
+
+.contenedor{
+position:relative;
+z-index:2;
+width:520px;
+padding:45px;
+background:#140909;
+border:2px solid #3b0d0d;
+border-radius:22px;
+box-shadow:
+0 0 25px rgba(255,0,0,0.12),
+0 0 60px rgba(0,0,0,0.9);
+text-align:center;
+}
+
+h2{
+font-size:38px;
+color:#ffffff;
+margin-bottom:12px;
+font-weight:bold;
+letter-spacing:2px;
+text-shadow:0 0 12px rgba(255,0,0,0.4);
+}
+
+p{
+color:#d1b5b5;
+font-size:16px;
+margin-bottom:30px;
+}
+
+input,
+select{
+width:92%;
+padding:16px;
+margin:12px 0;
+background:#1f1010;
+border:2px solid #4b1d1d;
+border-radius:14px;
+font-size:16px;
+color:white;
+outline:none;
+transition:0.3s;
+}
+
+input::placeholder{
+color:#a16b6b;
+}
+
+input:focus,
+select:focus{
+border-color:#ef4444;
+background:#291414;
+box-shadow:0 0 18px rgba(239,68,68,0.35);
+}
+
+button{
+width:96%;
+padding:16px;
+margin-top:20px;
+background:linear-gradient(135deg,#dc2626,#991b1b);
+color:white;
+border:none;
+border-radius:14px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+text-transform:uppercase;
+letter-spacing:1px;
+}
+
+button:hover{
+transform:scale(1.03);
+background:linear-gradient(135deg,#ef4444,#b91c1c);
+box-shadow:0 0 22px rgba(239,68,68,0.45);
+}
+
+h3{
+margin-top:30px;
+padding:18px;
+background:#1f1010;
+border-radius:14px;
+color:#ffffff;
+font-size:22px;
+border:1px solid #4b1d1d;
+}
+
+label{
+display:block;
+margin:12px 0;
+font-size:17px;
+color:#f3d4d4;
+}
+
+a{
+text-decoration:none;
+}
